@@ -1,0 +1,84 @@
+//// @author Estefanía Ortiz
+
+@import "variables.scss";
+@import "mixins.scss";
+
+//Estilos generales form
+
+.form-group {
+    @include display-flex (center);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+form {
+    background-color: $bakground-color-form;
+    @include border-style(1,solid, $color-form-border);
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+}
+//Estilos generales form-title
+.form-title {
+    @include font-style(normal, $font-size-form-title, $font-weight-form-title);
+    background-color: $background-color-form-title;
+    border-radius: $border-radius;
+    color: $color-form-title;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+}
+
+//Estilos generales input
+.input {
+    border-radius: $border-radius;
+    height: $height-input;
+}
+.input-registro {
+    height: 2.5*$height-input;
+    margin-top: $space-div*5;
+    padding: $space-div;
+    width: 100%;
+}
+
+// Estilos generales button
+button {
+    font-size: $font-size-generic*1.5;
+    font-weight: bold;
+    height: $height-form-button;
+
+    &:hover{
+        color: $background-color-theme;
+        background-color: $color-font-theme;
+        }
+}
+
+.button-registro {
+    height: $height-form-button*4;
+}
+
+// Form lineal
+.form-lineal {
+    @include border-style(0,solid, $color-border);
+    text-align: center;
+
+    button {
+        font-weight: 700;
+        height: 2.5rem;
+    }
+}
+
+// Form incripción  
+.form-registro {
+    background-color: $background-color-form-registro;
+    padding: $space-div*2;
+    min-width: 40%;
+    z-index: 100;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+}

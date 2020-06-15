@@ -1,0 +1,74 @@
+//// @author Estefanía Ortiz
+
+@import "variables.scss";
+
+.portada {
+    background-color: $background-color-theme;
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+    color: $color-font-theme;
+    padding: $space-div;   
+
+    .image {
+        background-image: $background-image-portada;
+        background-size: contain;
+        display: block;
+        padding-top: $space-div*5;
+        padding-bottom: $space-div*5;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* Estilo section */
+    .portada {
+        font-size: $font-size-generic*6;
+        margin-top: $space-div;
+        margin-bottom: $space-div;
+        padding-right: $space-div*5;
+        text-align: center;
+        width: 100%;
+
+        .image {
+            width: 100%;
+        }
+
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    /* Estilo section */
+    .portada {
+        @include display-flex(space-around);
+        align-items: center;
+        font-size: $font-size-generic*3;
+        padding: 2%;
+
+        .texto {
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+            line-height: 1px;
+            min-width: 40%;
+
+            p:nth-child(2) {
+                font-size: $font-size-generic*4;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Estilo section */
+    .texto {
+        font-size: $font-size-generic*2;
+        width: calcularAnchura(7);
+        min-width: 40%;
+    }
+}

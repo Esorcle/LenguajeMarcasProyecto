@@ -1,0 +1,33 @@
+{
+  "name": "lastproject",
+  "version": "1.0.0",
+  "description": "Proyecto de subida de nota, para Lenguaje de marcas de 1º Daw",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-dart-scss": "^1.0.4",
+    "gulp-if": "^3.0.0",
+    "gulp-image-optimize": "0.0.3",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "^2.0.0",
+    "path": "^0.12.7",
+    "sassdoc": "^2.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lm",
+    "project",
+    "curso"
+  ],
+  "author": "esorcle",
+  "license": "ISC"
+}

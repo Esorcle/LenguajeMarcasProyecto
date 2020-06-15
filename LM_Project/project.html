@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!--link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">-->
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="menu">
+            <div class="italic"><a href="#" target="self"><span class="azul">Cursos</span><span>.</span>diseño</a>
+            </div>
+            <!-- Hack Para Desplegar el Menú activando un checkbox -->
+            <input type="checkbox" class="checkbox" id="buttonMenu" />
+            <label for="buttonMenu" class="buttonMenu fa fa-bars" tabindex="1">
+            </label>
+            <nav class="nav-bar">
+                <a href="#curso">Cursos</a>
+                <a href="#registro">Registro</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </header>
+        <section class="portada">
+            <div class="image"></div>
+            <div class="texto-portada italic">
+                <p>Buscando</p>
+                <p>nuevos RETOS ?</p>
+                <p>ven!, mira que tenemos</p>
+            </div>
+        </section>
+        <article id="curso" class="card-group">
+            <div class="card">
+                <p class="card-title">HTML</p>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
+                    accusamus non sint
+                    quis autem ratione illum modi. Maiores at unde blanditiis fugiat autem similique amet! Sint error
+                    non quidem.</p>
+                <img class="card-img image" src="img/html.png">
+                <form class="form-lineal">
+                    <p class="form-title">¿Cerca de ti?</p>
+                    <p>Indica horas que quieres dedicar y ciudad</p>
+                    <input type="text" class="hour" name="time" placeholder="Horas">
+                    <input type="text" class="city" name="city2" placeholder="Ciudad">
+                    <button class="button" type="submit">Cursos</button>
+                </form>
+            </div>
+            <div class="card">
+                <p class="card-title" card-title>CSS</p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic perspiciatis odio
+                    numquam veniam,
+                    assumenda perferendis tenetur porro rem est saepe corrupti voluptas a? Enim repudiandae molestias
+                    provident ipsa amet suscipit!.</p>
+                <img class="image card-img" src="img/css.png">
+                <form class="form form-lineal">
+                    <p class="form-title">¿Cerca de ti?</p>
+                    <p class="form-text">Indica horas que quieres dedicar y ciudad</p>
+                    <input type="text" class="hour" name="time" placeholder="Horas">
+                    <input type="text" class="city" name="city2" placeholder="Ciudad">
+                    <button class="button" type="submit">Cursos</button>
+                </form>
+            </div>
+        </article>
+        <div class="form-group">
+            <form id="registro" class="form form-registro">
+                <p class="form-title">Registrate!</p>
+                <p class="form-text">Introducide tus datos para acceder a toda nuestra gama de cursos</p>
+                <ol>
+                    <li><input class="input-registro" type="text" name="name" placeholder="First name" required></li>
+                    <li><input class="input-registro" type="text" name="apellido" placeholder="Last name" required></li>
+                    <li><input class="input-registro" type="email" name="email" placeholder="Email address" required>
+                    </li>
+                    <li><input class="input-registro" type="text" name="city" placeholder="City" required></li>
+                    <li><input class="input-registro" type="tel" name="phone" placeholder="Phone number" required></li>
+                    <li><input class="input-registro" type="text" name="promo" placeholder="Promo Code (optional)"></li>
+                </ol>
+                <button class="button button-registro" type="submit">Vamos a aprender!</button>
+            </form>
+        </div>
+        <footer>
+            <div id="contact" class="footer-contact">
+                <ul>
+                    <li><i class="fa fa-phone-square" aria-hidden="true"></i>
+                        633 32 75 08</li>
+                    <li><a href="mailto:estefaniaortizcle@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            estefaniaortizcle@gmail.com</a></li>
+                    <li>
+                        <a href="https://github.com/Esorcle"><i class="fa fa-github"
+                                aria-hidden="true"></i>https://github.com/Esorcle
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                <p class="footer-text">Copyright Esorcle</p>
+        </footer>
+    </div>
+</body>
+
+</html>

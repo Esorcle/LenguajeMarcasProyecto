@@ -1,0 +1,74 @@
+//// @author Estefanía Ortiz
+
+@import "variables.scss";
+
+/// Estilos nav 
+
+
+.checkbox {
+    display: $style-none;
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Nav */
+    .nav-bar {
+        background-color: $color-font-theme;
+        border-top-left-radius: $border-radius*2;
+        border-bottom-left-radius: $border-radius*2;
+        font-weight: bold;
+        position: absolute;
+        min-width: 30%;
+        right: -200vw;
+        top: 3%;
+        transition: all .5s linear;
+        z-index: 10;
+
+        a {
+            color: $background-color-theme;
+            border-radius: $border-radius;
+            -webkit-border-radius: $border-radius;
+            -moz-border-radius: $border-radius;
+            -ms-border-radius: $border-radius;
+            -o-border-radius: $border-radius;
+            display: block;
+            font-size: $font-size-generic*4;
+            line-height: 2;
+            margin: 0 auto;
+            text-align: center;
+            width: 96%;
+
+            &:hover {
+                color: $color-font-theme;
+                background-color: $background-color-theme;
+            }
+        }
+
+    }
+
+    /* Estilos que dotan de funcionalidad al menu */
+    .buttonMenu:focus~.nav-bar {
+        right: 2%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-bar a {
+        color: $background-color-theme;
+        @include font-style ($style-font-italic, $font-size-generic*2, normal);
+
+        &:hover {
+            background-color: $background-color-theme;
+            border-radius: $border-radius;
+            -webkit-border-radius: $border-radius;
+            -moz-border-radius: $border-radius;
+            -ms-border-radius: $border-radius;
+            -o-border-radius: $border-radius;
+            color: $color-font-theme;
+}
+    }
+
+    .buttonMenu {
+        display: none !important;
+    }
+}

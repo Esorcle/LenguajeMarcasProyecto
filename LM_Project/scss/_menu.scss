@@ -1,0 +1,25 @@
+//// @author Estefanía Ortiz
+
+@import "variables.scss";
+@import "nav.scss";
+@import "mixins.scss";
+
+//Estructura para la cabecera
+
+/* Header */
+.menu {
+    @include display-flex(space-between);
+    align-items: center;
+    font-size: $font-size-generic*5;
+    padding-top: $space-div*4;
+    padding-bottom: $space-div*4;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    /* Estilo header */
+    .menu {
+        font-size: $font-size-generic*3;
+    }
+}

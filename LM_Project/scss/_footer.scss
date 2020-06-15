@@ -1,0 +1,19 @@
+//// @author Estefanía Ortiz
+
+@import "variables.scss";
+@import "mixins.scss";
+
+
+//  Estilo footer  
+footer {
+    @include display-flex(space-around);
+    align-items: center;
+    background-color: $background-color-theme;
+    padding: $space-div;
+    z-index: 0;
+
+    p {
+        @include font-style(normal,$font-size-generic, bold);
+        
+    }
+}

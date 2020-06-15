@@ -1,0 +1,32 @@
+@mixin centrado-respecto-padre ($pixel) {
+    margin: #{$pixel}px auto ;
+}
+@mixin font-style-text ($font-family, $font-size, $line-height, $letter-spacing) {
+    font-family: $font-family;
+    font-size: #{$font-size}rem;
+    line-height: $line-height;
+    letter-spacing: #{$letter-spacing}rem;
+}
+@mixin font-style ($font-style, $font-size, $font-weight){
+    font-style: $font-style;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin border-color ($color) {
+    border-color: $color;
+}
+@mixin border-style ($pixel, $style, $color){
+    border: #{$pixel}px $style;    
+}
+@mixin display-flex ($justify-content){
+    display: flex;
+    justify-content: $justify-content;
+}
+@mixin transform($value) {
+    transform: scale($value,$value);
+    -webkit-transform: scale($value,$value);
+    -moz-transform: scale($value,$value);
+    -ms-transform: scale($value,$value);
+    -o-transform: scale($value,$value);
+}

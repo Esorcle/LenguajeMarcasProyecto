@@ -1,0 +1,10 @@
+//Función para calcular Anchura en base 10
+
+/// Función que devuleve la anchura correspondiente al elemento de la maquetación
+/// @parameter {integer} $ancho - Número ocupar entre 100
+/// @return {integer} - Pocentaje, sin el símbolo %, del ancho correspondiente al alemento
+/// @group layout
+
+@function calc-ancho-100($ancho) {
+    @return percentage($ancho/100);
+}

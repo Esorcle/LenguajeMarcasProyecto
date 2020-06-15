@@ -1,0 +1,32 @@
+//// @author Estefanía Ortiz
+
+@import "variables.scss";
+
+///Estilos generales
+
+* {
+    box-sizing: border-box;
+    font-family: $base-font-family;
+    color: $color-font-theme;
+}
+
+/* Estilo al contenedor*/
+.container {
+    @include centrado-respecto-padre(0);
+    max-width: $max-container-width;
+}
+
+.italic {
+    font-style: $style-font-italic;
+}
+
+/// Links
+a {
+    text-decoration: $style-none;
+}
+
+/// Listas
+ol {
+    list-style: $style-none;
+    padding-left: $list-padding-left;
+}

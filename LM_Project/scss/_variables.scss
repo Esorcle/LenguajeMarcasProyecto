@@ -1,0 +1,95 @@
+//// @author Estefanía Ortiz
+
+//------------ General ---------------//
+/// Tipo de letra general
+/// @group general
+$base-font-family:'GothamPro', sans-serif;
+$style-font-italic: italic;
+
+/// Color del texto general 
+/// @group general
+$color-font-theme: rgb(70, 69, 69);
+
+/// Tamaño de letra general 
+/// @group general
+$font-size-generic: 1vw;
+
+
+//----------- Layout-----------//
+/// Mapa para breakpoints
+/// @group layout
+$breakpoints: ("sm":576px,"md":768px,"lg":992px);
+
+/// Margin para la separación entre los distintos elementos del layout
+/// @group layout
+$space-div: 1%;
+
+/// Anchura del contenedor principal
+/// @group layout
+$max-container-width:90%;
+
+/// Bordes 
+/// @group layout
+$border-radius: 8px;
+$border: 1px;
+
+
+// ----------- Listas ---------------//
+/// Estilo listas y checkbox
+/// @group list
+$style-none: none;
+$list-padding-left: 0%;
+
+
+//------------ Menu -----------------//
+$icon-fontawesome: "buttonMenu fa fa-bars";
+
+
+//------------ Color ----------------//
+
+/// Color tema
+/// Variables de color del tema general
+/// @group color
+$background-color-theme: rgb(236, 195, 195);
+$color-white: white;
+$color-border: $background-color-theme;
+
+
+//---------- Formularios -------------//
+
+/// Color form
+/// @group form
+$color-form-title: $color-font-theme;
+$bakground-color-form: $background-color-theme;
+$background-color-form-registro: $color-white;
+$background-color-form-title: $background-color-theme;
+$color-form-border: $background-color-theme;
+
+/// Tamaño letra titulo
+/// @group form
+$font-size-form-title: 182%;
+
+/// Grosor letra titulo
+/// @group form
+$font-weight-form-title: bold;
+
+/// Alturas
+/// Form-registro
+/// @group form
+$height-form-registro: 660px;
+/// form-button
+/// @group form
+$height-form-button: 1rem;
+/// form-input
+/// @group form
+$height-input: 1rem;
+
+
+//------------- Imagen ------------//
+/// Portada
+/// @group image
+$background-image-portada: url(../../img/fondo.png);
+
+
+
+

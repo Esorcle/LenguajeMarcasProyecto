@@ -1,0 +1,77 @@
+//// @author Estefanía Ortiz
+
+@import "variables.scss";
+@import "mixins.scss";
+@import "image.scss";
+
+
+/// Estilos generales cards
+
+@media screen and (min-width: 576px) {
+    .card-group {
+        @include display-flex (space-between);
+    }
+    .card {
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-group {
+        margin-top: $space-div*3;
+    }
+    .card {
+        margin-bottom: 3%;
+        padding: 0.5%;
+
+        .card-text {
+            font-size: 3vw;
+        }
+
+        .card-title {
+            @include font-style(italic,$font-size-generic*4,normal);
+            margin-top: 3%;
+            margin-bottom: 3%;
+            padding-bottom: 1%;
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .card-group {
+        flex-wrap: nowrap;
+    }
+}
+
+
+.card {
+    background-color: $background-color-theme;
+    border-radius: $border-radius;
+    color: $color-font-theme;
+    text-align: center;
+    padding: 2%;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+
+    .card-text {
+        line-height: 25px;
+        margin: auto;
+        padding: 1%;
+        width: 80%;
+    }
+
+    .card-title {
+        font-size: 167%;
+        font-weight: bold;
+        border-bottom: $border solid rgb(189, 186, 186);
+        text-align: center;
+    }
+
+    .card-img {
+        width: 30%;
+    }
+}
